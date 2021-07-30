@@ -1,0 +1,17 @@
+<div class="charts">
+  <div class="container">
+    <h1>Charts</h1>
+    <div class="charts__tools">
+    </div>
+    <div class="charts__grid">
+      <app-chart *ngFor="let chart of charts"
+                 [chartBg]="chart.bg"
+                 [chartTitle]="chart.title"
+                 [chartLine]="chart.line"
+                 [chartData]="chart.data"
+                 [chartType]="chart.type"
+
+      ></app-chart>
+    </div>
+  </div>
+</div>
